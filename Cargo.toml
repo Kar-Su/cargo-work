@@ -1,0 +1,16 @@
+[package]
+name = "cargo-work"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "cargo-work"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.54", features = ["derive"] }
+crates_io_api = "0.12.0"
+semver = "1.0.27"
+toml_edit = "0.24.0"
+which = "8.0.0"
