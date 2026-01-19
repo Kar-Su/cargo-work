@@ -11,7 +11,7 @@ mod workspace;
 fn main() {
     let args: Vec<String> = std::env::args().collect();
 
-    let cli = if args.len() > 1 && args[1] == "setup" {
+    let cli = if args.len() > 1 && args[1] == "work" {
         Cli::parse_from(std::iter::once(args[0].clone()).chain(args.into_iter().skip(2)))
     } else {
         Cli::parse()
